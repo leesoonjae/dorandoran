@@ -27,8 +27,8 @@
 - **코드 컨벤션**
   1. prettierrc로 prettier 설정 통일
   2. 변수명은 직관적으로 짜기 (카멜케이스 기반)
-    - 함수명은 동사+명사 addReview
-    - 그 외 컴포넌트 명은 알아보기 쉽게 작성하기 reviewButton
+    - 함수명은 동사+명사 addPost
+    - 그 외 컴포넌트 명은 알아보기 쉽게 작성하기 writeButton
 
 <br/>
 <br/>
