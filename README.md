@@ -1,14 +1,5 @@
 # 도란도란
 
-
-
-##  팀원 소개
-
-| 이름   | 깃허브                                       |
-| ------ | -------------------------------------------- |
-| 이순재 | [@leesoonjae](https://github.com/leesoonjae)       |
-| 김명준 | [@chorongs](https://github.com/chorongs)       |
-
 <br/>
 <br/>
 
