@@ -1,0 +1,76 @@
+.back-button {
+  background: var(--surface-light);
+  border-radius: 50%;
+  border: none;
+  width: 3.2rem;
+  height: 3.2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.back-button:hover {
+  background: var(--surface);
+}
+
+h1 {
+  margin: 2.5rem 0;
+  font-size: 3.8rem;
+  text-align: center;
+}
+
+form {
+  display: grid;
+  row-gap: 2.5rem;
+}
+
+.name-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.6rem;
+}
+form label {
+  font-size: 1.6rem;
+  line-height: 3rem;
+  color: var(--black);
+}
+form input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: var(--black);
+  border-radius: 0.8rem;
+  border: 1px solid var(--on-secondary);
+}
+
+form input:focus {
+  outline: 2px solid var(--primary);
+}
+
+button {
+  font-size: 1.6rem;
+  background-color: var(--primary);
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 99px;
+  cursor: pointer;
+  margin-top: 5rem;
+}
+button:hover {
+  background-color: var(--primary-dark);
+}
+
+@media (max-width: 600px) {
+  form {
+    row-gap: 2rem;
+  }
+  .name-container {
+    grid-template-columns: 1fr;
+    line-height: 3rem;
+    row-gap: 2rem;
+  }
+}

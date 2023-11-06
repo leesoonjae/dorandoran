@@ -1,0 +1,43 @@
+:root {
+  --primary: #007b5d;
+  --primary-dark: #00543c;
+  --on-primary: #d3e8e0;
+  --on-primary-light: #e6f4f1;
+  --secondary: #e2e8f0;
+  --on-secondary: #94a3b8;
+  --surface: #e7e7e7;
+  --surface-light: #f6f6f6;
+  --surface-dark: #f6fcff;
+  --black: #333333;
+  --blue: #3c9afb;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-size: 10px;
+}
+
+button {
+  border: none;
+  box-shadow: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.layout {
+  margin: 0 auto;
+  max-width: 600px;
+  height: 100%;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  body {
+    padding: 0 16px;
+  }
+}
