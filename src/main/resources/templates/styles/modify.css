@@ -1,0 +1,58 @@
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.icon-container img {
+  margin: 0 2px;
+}
+
+.icon-container img:hover {
+  cursor: pointer;
+}
+
+.write-container {
+  padding: 40px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
+  outline: none;
+  width: 100%;
+}
+
+textarea {
+  padding: 2px;
+  margin-top: 10px;
+  width: 100%;
+  font-size: 1.8rem;
+  resize: none;
+  letter-spacing: normal;
+  line-height: 1.8;
+  color: var(--black);
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  .write-container {
+    padding: 16px;
+  }
+  .title {
+    font-size: 2.4rem;
+  }
+  textarea {
+    font-size: 1.6rem;
+  }
+}

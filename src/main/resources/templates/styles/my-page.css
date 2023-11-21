@@ -1,0 +1,131 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-container {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: calc(100vh - 109px);
+}
+
+.content-container p {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.content-container span {
+  font-size: 1.6rem;
+  color: gray;
+}
+
+.photo {
+  width: 120px;
+  height: 120px;
+  background: rgb(248, 248, 248);
+  border-radius: 50%;
+  margin: 20px auto;
+}
+
+.write-container {
+  text-align: start;
+  margin-top: 30px;
+  width: 100%;
+  padding: 20px;
+}
+
+.write-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.write-header p {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.write-header button {
+  padding: 0.5rem 1rem;
+  background: var(--primary);
+  color: white;
+  border-radius: 99px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.write-header button:hover {
+  background: var(--primary-dark);
+}
+
+.logout {
+  color: var(--primary);
+  background-color: white;
+  padding: 2px;
+  font-size: 1.6rem;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.logout:hover {
+  color: var(--primary-dark);
+}
+
+.contents ul {
+  margin-top: 20px;
+}
+
+.contents ul li {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.contents ul li:hover {
+  background: var(--surface-light);
+  border-radius: 16px;
+}
+
+.contents ul li div {
+  margin-left: 6px;
+}
+
+.contents ul li div span {
+  font-size: 1.8rem;
+  color: var(--black);
+}
+
+.contents ul li div p {
+  max-width: 600px;
+  font-size: 1.4rem;
+  display: -webkit-box;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: 500;
+  color: gray;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  section {
+    padding-top: 20px;
+  }
+  .contents ul li {
+    padding: 0.5rem;
+  }
+  .contents ul li:hover {
+    border-radius: 8px;
+  }
+  .write-container {
+    padding: 8px;
+  }
+}

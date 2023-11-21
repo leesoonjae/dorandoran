@@ -1,20 +1,3 @@
-.back-button {
-  background: var(--surface-light);
-  border-radius: 50%;
-  border: none;
-  width: 3.2rem;
-  height: 3.2rem;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-}
-
-.back-button:hover {
-  background: var(--surface);
-}
-
 h1 {
   margin: 2.5rem 0;
   font-size: 3.8rem;
@@ -36,6 +19,7 @@ form label {
   line-height: 3rem;
   color: var(--black);
 }
+
 form input {
   width: 100%;
   padding: 1rem;

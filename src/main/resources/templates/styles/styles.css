@@ -35,9 +35,64 @@ body {
   height: 100%;
 }
 
+/* 뒤로가기 버튼 */
+.back-button {
+  background: var(--surface-light);
+  border-radius: 50%;
+  border: none;
+  width: 3.2rem;
+  height: 3.2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.back-button:hover {
+  background: var(--surface);
+}
+
+/* Bottom navigation */
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  max-width: 600px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  transform: translate(-50%, 0);
+}
+
+.navbar div {
+  margin: 0 auto;
+  padding: 0.7rem;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
-  body {
+  .layout {
     padding: 0 16px;
   }
 }

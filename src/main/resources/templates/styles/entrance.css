@@ -1,0 +1,91 @@
+.page {
+  margin: 0 auto;
+  display: flex;
+  column-gap: 6px;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.page .click {
+  width: 20px;
+  height: 5px;
+  padding: 0.5rem;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+}
+
+.page .non-click {
+  width: 20px;
+  height: 5px;
+  padding: 0.5rem;
+  background-color: var(--on-primary);
+  border-radius: 0.5rem;
+}
+
+span {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: var(--primary);
+  line-height: 7rem;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 6rem;
+  justify-content: center;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 3.2rem;
+  color: var(--black);
+}
+
+button {
+  font-size: 1.6rem;
+  background-color: var(--primary);
+  /* max-width: 320px; */
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 99px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--primary-dark);
+}
+
+.img-container {
+  /* max-width: 320px; */
+  margin: 0 auto;
+  overflow: hidden;
+}
+.img-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  .page {
+    margin-top: 2.5rem;
+  }
+
+  span {
+    font-size: 1.5rem;
+    line-height: 4rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+  section {
+    row-gap: 3rem;
+  }
+}
